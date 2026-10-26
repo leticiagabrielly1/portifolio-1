@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leticia Gabrielly | Portfólio</title>
+  <meta name="description" content="Portfólio de Leticia Gabrielly, estudante de TI com interesse em desenvolvimento back-end.">
+  <link rel="icon" href="img/monograma.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Formas decorativas reutilizadas nos cards (ignoradas por leitores de tela) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="flor" viewBox="0 0 100 100">
+      <g fill="currentColor">
+        <ellipse cx="50" cy="26" rx="12" ry="24"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(72 50 50)"/>
+        <ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(144 50 50)"/><ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(216 50 50)"/>
+        <ellipse cx="50" cy="26" rx="12" ry="24" transform="rotate(288 50 50)"/>
+      </g><circle cx="50" cy="50" r="8" fill="var(--vinho)"/>
+    </symbol>
+    <symbol id="estrela" viewBox="0 0 100 100"><path fill="currentColor" d="M50 4l9 37 37 9-37 9-9 37-9-37-37-9 37-9z"/></symbol>
+  </svg>
+
+  <header class="topo">
+    <div class="topo__interno">
+      <a class="marca" href="#inicio" aria-label="Leticia Gabrielly, ir para o início">
+        <img src="img/monograma.svg" alt="" width="40" height="40">
+        <span>Leticia Gabrielly</span>
+      </a>
+
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="menu-botao__linhas" aria-hidden="true"></span>
+      </button>
+
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="tema-botao" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio" aria-labelledby="titulo-nome">
+      <div class="container inicio__grade">
+        <div class="inicio__texto">
+          <p class="saudacao" id="saudacao">Olá</p>
+          <h1 id="titulo-nome">Leticia Gabrielly</h1>
+          <p class="identificacao">Estudante de TI • Desenvolvimento back-end</p>
+          <p>Olá, eu sou Leticia Gabrielly. Estudante de TI, com interesse em desenvolvimento back-end e em transformar ideias em sistemas que fazem sentido no dia a dia.</p>
+          <div class="botoes">
+            <a class="botao botao--principal" href="#projetos">Conheça meus projetos</a>
+            <a class="botao botao--contorno" href="#contato">Entre em contato</a>
+          </div>
+        </div>
+        <div class="inicio__avatar">
+          <svg class="deco deco--a" aria-hidden="true"><use href="#flor"/></svg>
+          <svg class="deco deco--b" aria-hidden="true"><use href="#estrela"/></svg>
+          <!-- TROCAR PELA FOTO: coloque img/foto.jpg e use src="img/foto.jpg" -->
+          <img src="img/avatar.svg" alt="Avatar ilustrativo com as iniciais LG" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+      <div class="container estreito">
+        <h2 id="titulo-sobre">Sobre mim</h2>
+        <!-- PERSONALIZAR: ajuste o texto com suas palavras -->
+        <p>Sou estudante do Ensino Médio Técnico em Tecnologia da Informação no Senac RN. Gosto de entender como os sistemas funcionam por dentro, e é por isso que me interesso tanto pelo desenvolvimento back-end.</p>
+        <p>O que mais me atrai é a lógica, a organização dos dados e a possibilidade de transformar uma ideia em uma aplicação útil. Estou aprendendo Python, JavaScript, HTML, CSS, SQL e integração com APIs, e já tive contato com Flask em projetos escolares.</p>
+        <p>Fora da tela, gosto de música, leitura, séries e desenho. Esses interesses também influenciam o jeito como penso e crio.</p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao secao--suave" aria-labelledby="titulo-habilidades">
+      <div class="container">
+        <h2 id="titulo-habilidades">Habilidades</h2>
+        <p class="intro">Tecnologias que estou estudando e usando nos meus projetos.</p>
+        <ul class="habilidades">
+          <li><h3>Python</h3><p>Linguagem para criar a lógica de programas e a parte do servidor.</p></li>
+          <li><h3>JavaScript</h3><p>Linguagem que dá comportamento às páginas, como menus e validações.</p></li>
+          <li><h3>HTML</h3><p>Define a estrutura e o conteúdo das páginas.</p></li>
+          <li><h3>CSS</h3><p>Cuida da aparência: cores, fontes e organização na tela.</p></li>
+          <li><h3>SQL</h3><p>Linguagem para criar tabelas e consultar dados em bancos de dados.</p></li>
+          <li><h3>APIs</h3><p>Permitem que sistemas troquem informações entre si.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <h2 id="titulo-projetos">Projetos</h2>
+        <p class="intro">Os textos e links abaixo são demonstrativos e serão substituídos pelas informações reais.</p>
+        <!--
+          PARA CADA CARD, SUBSTITUIR:
+          1) Descrição de exemplo -> texto real do projeto
+          2) "Tecnologias — preencher" -> tecnologias usadas
+          3) href="https://example.com/..." -> link real do projeto
+          4) A capa (div .capa) -> pode virar <img src="img/..." alt="...">
+        -->
+        <div class="projetos">
+          <article class="card">
+            <div class="capa capa--1" aria-hidden="true"><svg><use href="#flor"/></svg></div>
+            <h3>Crok</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Projeto escolar desenvolvido durante o curso, com foco em organizar e apresentar informações de forma clara.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/crok">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--2" aria-hidden="true"><svg><use href="#estrela"/></svg></div>
+            <h3>Setembro Amarelo</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Trabalho sobre a campanha de valorização da vida e de cuidado com a saúde mental, pensado para informar com respeito.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/setembro-amarelo">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--3" aria-hidden="true"><svg><use href="#flor"/></svg></div>
+            <h3>Site de Geografia</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Site com conteúdos de Geografia organizados por temas, para facilitar a consulta e o estudo.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/geografia">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--4" aria-hidden="true"><svg><use href="#estrela"/></svg></div>
+            <h3>Solidariza</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Projeto com tema de solidariedade, que busca aproximar pessoas e iniciativas de ajuda ao próximo.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/solidariza">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--5" aria-hidden="true"><svg><use href="#flor"/></svg></div>
+            <h3>Quiz de Programação</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Quiz com perguntas sobre programação, para praticar conceitos de forma simples e interativa.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/quiz-programacao">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--6" aria-hidden="true"><svg><use href="#estrela"/></svg></div>
+            <h3>Agenda de Estudos</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Ideia de agenda para organizar tarefas e momentos de estudo ao longo da semana.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/agenda-estudos">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--7" aria-hidden="true"><svg><use href="#flor"/></svg></div>
+            <h3>Hora da IA</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Projeto sobre inteligência artificial, com foco em apresentar o tema de maneira acessível.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/hora-da-ia">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+          <article class="card">
+            <div class="capa capa--8" aria-hidden="true"><svg><use href="#estrela"/></svg></div>
+            <h3>Remenber</h3>
+            <p class="rotulo">Descrição de exemplo — personalizar</p>
+            <p>Projeto desenvolvido durante o curso. Descrição a ser preenchida com o objetivo e o resultado do trabalho.</p>
+            <p class="tec">Tecnologias — preencher</p>
+            <a href="https://example.com/remenber">Ver projeto <span class="demo">(link demonstrativo)</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao secao--suave" aria-labelledby="titulo-contato">
+      <div class="container contato">
+        <div>
+          <h2 id="titulo-contato">Contato</h2>
+          <p>Vamos conversar? Escreva para mim pelo e-mail:</p>
+          <p><strong>leticiagabriellyleticia0708@gmail.com</strong></p>
+          <a class="botao botao--principal" href="mailto:leticiagabriellyleticia0708@gmail.com">Abrir aplicativo de e-mail</a>
+        </div>
+
+        <form id="form-contato" novalidate aria-describedby="aviso-form">
+          <p id="aviso-form" class="aviso">Formulário demonstrativo: ele só valida os campos. Nenhuma mensagem é enviada e nenhum dado é armazenado.</p>
+          <p class="obrigatorio">Campos com * são obrigatórios.</p>
+
+          <div class="campo">
+            <label for="nome">Seu nome *</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+            <p class="erro" id="erro-nome"></p>
+          </div>
+          <div class="campo">
+            <label for="email">Seu e-mail *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
+            <p class="erro" id="erro-email"></p>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
+            <p class="erro" id="erro-mensagem"></p>
+          </div>
+          <div class="campo campo--check">
+            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+            <label for="consentimento">Concordo com o uso dos dados informados para responder à minha mensagem. *</label>
+            <p class="erro" id="erro-consentimento"></p>
+          </div>
+
+          <button class="botao botao--principal" type="submit">Validar formulário</button>
+          <p id="retorno" class="retorno" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p>© <span id="ano">2026</span> Leticia Gabrielly</p>
+      <p>Aprender tecnologia é construir, testar e tentar de novo.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+</body>
+</html>

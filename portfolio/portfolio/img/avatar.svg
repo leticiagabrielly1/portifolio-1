@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="t">
+  <title id="t">Avatar ilustrativo com as iniciais LG</title>
+  <!-- PARA USAR SUA FOTO: coloque img/foto.jpg e troque o src no index.html -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBD3DA"/><stop offset="1" stop-color="#DCCFF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#g)"/>
+  <g fill="#C98B9B" opacity=".55">
+    <ellipse cx="90" cy="95" rx="14" ry="34" transform="rotate(-30 90 95)"/>
+    <ellipse cx="90" cy="95" rx="14" ry="34" transform="rotate(30 90 95)"/>
+    <ellipse cx="90" cy="95" rx="14" ry="34"/>
+  </g>
+  <circle cx="90" cy="95" r="9" fill="#5B1F3F"/>
+  <path d="M320 290l7 18 18 7-18 7-7 18-7-18-18-7 18-7z" fill="#5B1F3F" opacity=".8"/>
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#5B1F3F" stroke-width="2" opacity=".5"/>
+  <text x="200" y="232" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="100" fill="#5B1F3F">LG</text>
+</svg>
